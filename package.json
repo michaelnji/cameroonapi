@@ -1,0 +1,24 @@
+{
+  "name": "cameroonapi",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server",
+    "build": "npm run build:server",
+    "build:server": "vite build --ssr server.ts --outDir dist/server",
+    "preview": "cross-env NODE_ENV=production node server"
+  },
+  "dependencies": {
+    "@tinyhttp/app": "^2.2.3",
+    "compression": "^1.7.4",
+    "load-json-file": "^7.0.1",
+    "sirv": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  }
+}
